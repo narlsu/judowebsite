@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta charset="utf-8">
+		<meta name="description" content="Wainuiomata Judo Club">
+		<meta name="keywords" content="Judo Kano Jigoro Wainuiomata Judo Club">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul class="navitem">
+					<li class="navitem"><a href="index.html" class="navitem">Home</a></li>
+					<li class="navitem"><a href="gallery.html" class="navitem">Gallery</a></li>
+					<li class="navitem activated"><a href="location.html" class="navitem">Location</a></li>
+					<li class="navitem"><a href="pricing.html" class="navitem">Pricing</a></li>
+				</ul>
+				<ul id="mobile">
+					
+					<li class="mobitem"><a href="index.html"><img class="ico" src="images/home.svg" alt="Home"></a></li>
+					
+					
+					<li class="mobitem"><a href="gallery.html"><img class="ico" src="images/gallery.svg" alt="Gallery"></a></li>
+					
+					
+					<li class="mobitem activated"><a href="location.html"><img class="ico" src="images/map.svg" alt="Pricing & Location"></a></li>
+					
+				</ul>
+			</nav>
+			
+		</header>
+		<div id="wrap">
+			<div id="leftside"></div>
+			<div id="bgimage">
+				<div id="overlap">
+				<p>“It is not important to be better than someone else, but to be better than yesterday.”</p>
+				<small>-Kano Jigoro Original founder of Judo</small>
+				</div>
+			</div>
+			<div id="rightside"></div>
+		</div>
+		</div>
+
+		<main>
+		<div>
+			<h1 class="navitem" id="loc-head">Location</h1>
+			<h1 class="mobitem">Location, Pricing & Contact</h1>
+
+		<div id="judomap"></div>
+
+			<div class="display-when-mobile mobitem">
+				<article id="pricing">
+					<p class="para">MON:
+					17:30~18:15 Midgets (4-7)
+					18:30~20:00 Seniors (12+) (current on hold - No class)
+					</p>
+					<p class="para">
+						THU:
+						18:15~19:30 Juniors (7-12)
+						19:30~21:00 Seniors (12+)
+					</p>
+					<p class="para">
+						Our prices are per school term and are currently set at:
+						Midgets = $35
+						Juniors = $40 (one class a week)
+						Seniors = $50
+						There is a $5 discount if paid before the 4th week of the school term.
+					</p>
+				</article>	
+			</div>
+		</div>
+
+		<div id="judo-contact" class="conhide">
+			<form id="judo-form" action="#" >
+			<label class="contact-label" for="contact-type">Contact Type</label>
+				<select name="contact-type" id="contact-type" required>
+					<option value="enquiry">Enquiry</option>
+					<option value="complaint">Complaint</option>
+					<option value="appraisal">Appraisal</option>
+					<option value="other">Other</option>
+				</select>
+
+				<div class="form-group">
+					<label class="contact-label" id="cont-type2" for="message">Enter Message:</label><br>
+					<textarea name="message" id="message" required minlength="8" maxlength="15" rows="5" cols="60" required></textarea>
+					<span id="message-error"></span>
+
+				</div>
+
+				<div class="form-group">
+					<button id="contact-submit" type="submit">Submit</button>
+				</div>
+				
+			</form>
+		</div>
+				
+		</main>
+		<footer class="fixed-foot">
+			<div class="ipad-foot">
+				<a href="https://www.facebook.com/WOAJudo/"><p class="navitem">Follow us on Facebook</p></a>
+			</div>
+			<div class="ipad-foot">
+				<a href="https://www.facebook.com/WOAJudo/"><img src="images/facebook.svg" id="facebook" alt="Facebook Logo"></a>
+			</div>
+		</footer>
+		
+
+		<script async defer
+	        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVluFfeMywZpK2Aa0A9rJ-LoSIz3ZJ4eE&callback=initMap">
+	    </script>
+	    <script src="js/map.js"></script>
+	    <script src="js/jquery-3.1.1.js"></script>
+
+		<script src="js/jquery.validate.js"></script>
+		<script>
+		$("form").validate();
+		</script>
+
+	</body>
+</html>

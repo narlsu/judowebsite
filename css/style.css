@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+	padding: 1em;
+	text-align: center;
+	color: #9db064;
+}
+p, small{
+	font-family: 'Open Sans', sans-serif;
+}
+p {
+	width: 80%;
+	margin: 0 auto;
+}
+body {
+	background-color: #ffffff;
+}
+.navitem {
+	display: none;
+}
+ul {
+	display: flex;
+	justify-content: space-between;
+}
+#mobile{
+	width: 100%;
+}
+nav ul li a {
+	width: 100%;
+	height: 50px;
+	align-items: center;
+}
+nav {
+	width: 100%;
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	position: fixed;
+	top: 0px;
+	z-index: 5;
+}
+#icocontain {
+	display: flex;
+}
+article div p {
+	margin-bottom: 20px;
+}
+.ico {
+	/*flex-basis: 40px;*/
+	flex-grow: 0.2;
+	flex-basis: 0.8;
+	flex-shrink: 0.5;
+}
+#kano {
+	width: 100%;
+}
+#bgimage {
+	position: relative;
+}
+#overlap {
+	min-width: 263px;
+	width: 40%;
+	text-align: right;
+	color: white;
+	font-size: 100%;
+	position: absolute;
+	top: 50%;
+	right: 10vw;
+}
+#bgimage {
+	height: 300px;
+	width: auto;
+	background-image: url("../images/kanojigoro.jpg");
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: contain;
+	position: relative;
+}
+/*___________________________________Contact________________________________________*/
+label{
+	font-size: 1.2em;
+	font-family: 'Montserrat', 'sans-serif';
+	font-weight: 0;
+	color: white;
+	display: block;
+
+}
+.contact-label {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#contact-type {
+	border-radius: 3px;
+}
+textarea {
+	width: 80%;
+	border-radius: 5px;
+	opacity: 0.8;
+	height: 200px;
+}
+#judo-contact {
+
+	width: 100%;
+	height: 385px;
+	margin: 0 auto;
+	background-color: rgba(0, 0, 0, 0.8);
+	background-image: url('../images/contactoverlay.jpg');
+	background-position: 50% 50%;
+}
+#judo-form {
+	margin: 0 auto;
+	text-align: center;
+}
+#contact-submit {
+	color: white;
+	font-size: 1em;
+	padding: 10px 20px;
+	border: 1px solid white;
+	background: none;
+	margin: 16px;
+	vertical-align: middle;
+	border-radius: 3px;
+}
+#cont-type2{
+	margin-top: 20px;
+}
+/*____________________________________Footer________________________________________*/
+footer{
+	height: 60px;
+	background-color: rgba(0, 0, 0, 0.8);
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#pricing{
+	width: 80%;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+#pricing p {
+	margin-bottom: 10px;
+}
+a{
+	display: flex;
+	justify-content: center;	
+}
+.mobitem {
+	display: flex;
+	justify-content: center;
+}
+.activated {
+	background-color: #9db064;
+}
+.ico {
+	width: 33%;
+	min-height: 50px;
+	max-height: 50px;
+	height: 100%;
+}
+#judomap {
+	width: 100%;
+	height: 300px;
+}
+#facebook {
+	width: 40px;
+	height: 40px;
+}
+#wainuijudo, #jigorokano {
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+}
+.showmob {
+	display: block;
+	width: 100%; 
+	height: 300px;
+}
+/*____________________Pricing panel*/
+#top-p {
+	margin-top: 30px;
+}
+.price-para {
+	margin-bottom: 20px;
+	width: 60%
+	margin: 0 auto;
+	text-align: center;
+}
+.pricing-div {
+	display: block;
+}
+/*_______________________________Gallery________________*/
+
+
+/*Photoswipe To be used in Gallery in Future*/
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	color: #9db064;
+	text-align: center;
+	font-size: 1.2em;
+}
+.image-container {
+	width: 100%;
+	height: 400px;
+}
+.mob-none {
+	display: none;
+}
+/*450 px media query*/
+/*______________________Ipad_______________________________________*/
+@media screen and (min-device-width: 28.125em) {
+
+        /*_______________________________________Hidden Elements________*/
+
+	.conhide {
+		display: none;
+	}
+	.mobitem {
+		display: none;
+	}
+	#mobile{
+		display: none;
+	}
+	#loc-head {
+	display: block;
+	text-align: center;
+	}
+	/*_______________________________________Background image__________*/
+	body {
+		background-image: url('../images/bgimage.jpg');
+		width: 100%;
+		height: 100%;
+	}
+	main {
+		padding-top: 5px;
+		margin-top: 50px;
+		padding-bottom: 40px;
+		background-color: white;
+	}
+	/*__________________________________________ Nav_________________________*/
+	
+
+	nav {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+	ul {
+		width: 70%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.navitem {
+		display: flex;
+		justify-content: center;
+	}
+	nav ul li a {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1em;
+		color: white;
+		display: inline-block;
+	}
+	li {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+	/*______________________________________Home___________________*/
+	article {
+		display: flex;
+		justify-content: space-around;
+		align-items: top;
+		margin: 5%;
+		overflow: hidden;
+	}
+	.reverse {
+		flex-direction: row-reverse;
+	}
+	p {	margin: 0 auto;
+		display: block;
+		margin-bottom: 20px;
+		margin-left: 0;
+		margin-right: 10%;
+		width: 90%;
+	}
+	.home-head {
+		padding-bottom: 20px;
+		padding-top: 0;		
+	}
+	#wainuijudo {
+		width: 100%;
+		height: auto;
+
+	}
+	.ipad-home {
+		width: 100%;
+	}
+	/*________________________________pricing, contact______________________*/
+	#judo-contact {
+		width: 80%;
+		margin-bottom: 40px;
+	}
+	.pricing-div {
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.pricing-div p {
+		text-align: center;
+		width: 100%;
+	}
+	.mob-none {
+	display: block;
+	}
+	#top-p {
+		margin: 0;
+	}
+	/*________________________________Location_____________________*/
+	#judomap {
+		width: 80%;
+		margin: 0 auto;
+	}
+	/*________________________________Footer_______________________*/
+	.wrapper {
+		min-height: 100%;
+		margin-bottom: -50px;
+	}
+	.ipad-foot {
+		width: 30%;
+	}
+	.ipad-foot p{
+		width: 100%;
+		margin: 0px;
+	}
+	footer {
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	footer p {
+		display: block;
+		color: white;
+		font-size: 1.1em;
+	}
+	footer p:hover {
+		color: #9db064;
+	}
+	.fixed-foot {
+		position: fixed;
+		bottom: 0;
+	}
+/*768px media query*/
+@media screen and (min-device-width: 48em ) {
+	/*____________________________________ Flex Banner______________*/
+	#bgimage {
+		background-image: url('../images/kanojigoro.jpg');
+		width: 70%;
+		display: flex;
+		margin: 0 auto;
+	}
+	#leftside {
+		background-image: url('../images/judoleft.jpg');
+		width: 15%;
+		background-position: 50% 50%;
+		background-size: 400px;
+	}
+	#rightside {
+		background-image: url('../images/judoright.jpg');
+		width: 15%;
+		background-size: cover;
+		margin: 0 auto;
+		background-position: 50% 50%;
+	}
+	#wrap {
+		display: flex;
+	}
+	#overlap {
+		position: absolute;
+		top: 30%;
+		right: 5vw;
+	}
+	#overlap p {
+		font-size: 1.4em;
+	}
+	main {
+		width: 70%;
+		margin: auto;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+}
+/*1200px media query*/
+@media screen and (min-device-width: 75em){
+	body {
+		background-image: url("../images/bgimage.jpg");
+	}
+	.container {
+		display: flex;
+		justify-content: center;
+	}
+	#judo-contact {
+		margin: 20px;
+	}
+	.pricing-div {
+		margin: 20px;
+	}
+	.pricing-div p {
+		text-align: left;
+	}
+	.fixed {
+		position: fixed;
+		bottom: 0;
+	}
+	#judomap {
+		height: 430px;
+	}
+}
